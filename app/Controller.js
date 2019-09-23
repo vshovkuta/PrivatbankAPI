@@ -5,11 +5,12 @@ export class Controller {
   constructor() {
     this.model = new Model(this);
     this.view = new View(this);
+
     this.view.render();
+    this.model.getValue();
   }
 
-  updateData(data) {
-    this.view.update(data);
+  updateData(data, time) {
+    this.view.update(data, time);
   }
-
 }

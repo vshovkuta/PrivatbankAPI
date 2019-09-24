@@ -26,7 +26,7 @@ body {
   text-transform: uppercase;
 }
 
-.main-value {
+.main-value, .main-title {
   position: relative;
   font-family: Crystal;
   font-size: 40pt;
@@ -145,8 +145,27 @@ body {
 
 #updated-time {
   position: absolute;
-  bottom: 3px;
+  bottom: 4px;
   right: 5px;
   color: gray;
-  font-size: 9pt;
+  font-size: 8pt;
+}
+
+#updated-auto {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+}
+
+#updated-auto, #updated-auto select {
+    color: gray;
+    font-size: 8pt;
+}
+
+#updated-auto select {
+    opacity: 0.75;
+}
+
+#updated-auto select:hover {
+    opacity: 1
 }
